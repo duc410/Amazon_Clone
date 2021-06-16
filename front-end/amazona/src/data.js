@@ -1,23 +1,7 @@
-import bcrypt from 'bcryptjs'
-
 const data={
-    users:[
-        {
-            name:'Duc',
-            email:'admin@example.com',
-            password:bcrypt.hashSync('12345',8),
-            isAdmin:true
-        },
-        {
-            name:'Linh',
-            email:'user@example.com',
-            password:bcrypt.hashSync('1234',8),
-            isAdmin:false
-        }
-    ],
-
     products:[
         {
+            _id:'1',
             name:'Nike Slim Shirt',
             category:"Shirt",
             image:'../p1.jpg',
@@ -29,6 +13,7 @@ const data={
             description:'high quality product',
         },
         {
+            _id:'2',
             name:'Adidas Slim Shirt',
             category:"Shirt",
             image:'../p2.jpg',
@@ -40,17 +25,19 @@ const data={
             description:'high quality product shirt',
         },
         {
+            _id:'3',
             name:'Lacotes Slim Shirt',
             category:"Shirt",
             image:'../p3.jpg',
             price:220,
             countInStock:40,
-            brand:'Lacotes',
+            brand:'Nike',
             rating:3.5,
             numReviews:19,
             description:'high quality product crocodile',
         },
         {
+            _id:'4',
             name:'Puma Slim Shirt',
             category:"Shirt",
             image:'../p4.jpg',
@@ -62,23 +49,25 @@ const data={
             description:'high quality product puma',
         },
         {
-            name:'LouisViuston Slim Shirt',
+            _id:'5',
+            name:'Nike Slim Shirt',
             category:"Shirt",
             image:'../p1.jpg',
             price:120,
             countInStock:0,
-            brand:'LouisViuston',
+            brand:'Nike',
             rating:4.5,
             numReviews:10,
             description:'high quality product',
         },
         {
-            name:'H&M Slim Shirt',
+            _id:'6',
+            name:'Nike Slim Shirt',
             category:"Shirt",
             image:'../p1.jpg',
             price:120,
             countInStock:100,
-            brand:'H&M',
+            brand:'Nike',
             rating:4.5,
             numReviews:10,
             description:'high quality product',
